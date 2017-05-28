@@ -1,0 +1,101 @@
+//
+//  TuiJi_Prefix.pch
+//  TuiJi_T.B.E
+//
+//  Created by TUIJI on 16/6/2.
+//  Copyright © 2016年 TUIJI. All rights reserved.
+//
+
+#ifndef TuiJi_Prefix_pch
+#define TuiJi_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//system Libs
+#import <UIKit/UIKit.h>
+#import "TJNavigationController.h"
+#import "TJBaseAutoThemeVC.h"
+#import "TJBaseAutoThemeTVC.h"
+
+
+//Third Libs
+
+#import "MJExtension.h"
+#import "NIMSDK.h"
+#import <UIImageView+WebCache.h>
+
+
+
+//diy categories
+#import "UIImage+Image.h"
+#import "UIView+TJAutoLayout.h"
+#import "UIView+TJFrame.h"
+#import "NSString+TJString.h"
+#import "UIColor+TJColor.h"
+#import "NSString+TJStatusCode.h"
+
+
+//Usefull Tools
+#import "TJAppMacros.h"
+#import "TJGlobalVariables.h"
+
+#import "TJToolMacrocDefine.h"
+
+#import "TJDataCenterMacrocDefine.h"
+
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+
+#import <Foundation/Foundation.h>
+
+#import "GJGCBaseViewController.h"
+
+#import "GJCFUitils.h"
+
+#import "GJGCImageResizeHelper.h"
+
+#import "GJCUAsyncImageView.h"
+
+#import "GJCUProgressView.h"
+
+#import  "GJGCChatInputPanelStyle.h"
+
+#import "GJGCCommonFontColorStyle.h"
+
+#import "GJGCCommonHeadView.h"
+
+#import "GJCFAudioManager.h"
+
+#import "GJCFCachePathManager.h"
+
+#import "GJCFCoreTextContentView.h"
+
+#import "GJGCChatInputPanelStyle.h"
+
+#import "GJCFCoreTextAttributedStringStyle.h"
+
+#import "GJCFCoreTextImageAttributedStringStyle.h"
+
+#import "GJCFCoreTextParagraphStyle.h"
+
+
+#endif
+
+#import "GPUImage.h"
+#import "ConstantsConfig.h"
+
+#ifdef DEBUG
+# define DLog(fmt, ...) NSLog((@"[函数名:%s]\n" "[行号:%d] \n" fmt), __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define DLog(...);
+#endif
+
+#define  WC __unsafe_unretained typeof(self) weakSelf = self
+
+// Callback
+typedef void(^GenericCallback)(BOOL success, id result);
+
+#endif /* TuiJi_Prefix_pch */

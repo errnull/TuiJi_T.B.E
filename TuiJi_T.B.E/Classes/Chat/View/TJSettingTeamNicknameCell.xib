@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="huawen.ttf">
+            <string>STXihei</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="43" id="fgH-sD-hyV" customClass="TJSettingTeamNicknameCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fgH-sD-hyV" id="2np-ec-xGS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="42.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="群昵称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bG0-ND-SP9">
+                        <rect key="frame" x="17" y="0.0" width="288" height="42.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="STXihei" family="STXihei" pointSize="17"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bG0-ND-SP9" firstAttribute="top" secondItem="2np-ec-xGS" secondAttribute="top" id="B4z-hH-bDH"/>
+                    <constraint firstAttribute="trailing" secondItem="bG0-ND-SP9" secondAttribute="trailing" constant="15" id="Odt-EL-33l"/>
+                    <constraint firstAttribute="bottom" secondItem="bG0-ND-SP9" secondAttribute="bottom" id="vP8-IK-Wyc"/>
+                    <constraint firstItem="bG0-ND-SP9" firstAttribute="leading" secondItem="2np-ec-xGS" secondAttribute="leading" constant="17" id="xMZ-pk-iRY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myTeamNickNameTextField" destination="bG0-ND-SP9" id="Rxs-BP-Eyk"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="-156"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="huawen.ttf">
+            <string>STXihei</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="53" id="KGk-i7-Jjw" customClass="TJMyFansCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rmB-Sp-aJy">
+                        <rect key="frame" x="8" y="7" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="PFV-b0-WrZ"/>
+                            <constraint firstAttribute="width" constant="38" id="hra-bo-l4P"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUf-cE-Xz9">
+                        <rect key="frame" x="58" y="15" width="43" height="23"/>
+                        <fontDescription key="fontDescription" name="STXihei" family="STXihei" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bY8-1T-7ab">
+                        <rect key="frame" x="279" y="14" width="88" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Ixr-Rc-bj9"/>
+                            <constraint firstAttribute="width" constant="88" id="xMy-G9-JKh"/>
+                        </constraints>
+                        <state key="normal" image="profile_willAttentionBtn"/>
+                        <state key="selected" image="profile_didAttentionBtn"/>
+                        <connections>
+                            <action selector="attentionViewClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="10y-vt-nOo"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOE-8h-eLG">
+                        <rect key="frame" x="0.0" y="52" width="375" height="0.0"/>
+                        <color key="backgroundColor" red="0.79989343881607056" green="0.80002862215042114" blue="0.79987555742263794" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="PNi-pS-rnU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="OOE-8h-eLG" secondAttribute="bottom" id="0Oy-Mn-Ogy"/>
+                    <constraint firstAttribute="trailing" secondItem="bY8-1T-7ab" secondAttribute="trailing" constant="8" id="1WM-X4-lLi"/>
+                    <constraint firstItem="bY8-1T-7ab" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="M9O-Yt-9JQ"/>
+                    <constraint firstItem="rmB-Sp-aJy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Rs5-b4-ZzA"/>
+                    <constraint firstItem="OOE-8h-eLG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XAZ-2d-vrG"/>
+                    <constraint firstItem="ZUf-cE-Xz9" firstAttribute="leading" secondItem="rmB-Sp-aJy" secondAttribute="trailing" constant="12" id="cMR-XA-uXi"/>
+                    <constraint firstItem="ZUf-cE-Xz9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jxV-Ei-LAY"/>
+                    <constraint firstAttribute="trailing" secondItem="OOE-8h-eLG" secondAttribute="trailing" id="tug-y8-kN4"/>
+                    <constraint firstItem="rmB-Sp-aJy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xb4-mD-kOy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attentionView" destination="bY8-1T-7ab" id="rPT-jX-b6Y"/>
+                <outlet property="iconView" destination="rmB-Sp-aJy" id="lqB-Bo-Pdd"/>
+                <outlet property="nameView" destination="ZUf-cE-Xz9" id="nvn-Tj-zKu"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="58.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="profile_didAttentionBtn" width="262" height="76"/>
+        <image name="profile_willAttentionBtn" width="262" height="76"/>
+    </resources>
+</document>

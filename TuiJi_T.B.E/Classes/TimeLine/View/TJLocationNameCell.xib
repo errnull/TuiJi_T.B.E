@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="huawen.ttf">
+            <string>STXihei</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="KGk-i7-Jjw" customClass="TJLocationNameCell">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="365" height="66.666666666666671"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-xl-JCy">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="wVb-Fc-OYC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STXihei" family="STXihei" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aH-CX-znd">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4oD-9y-0eA"/>
+                            <constraint firstAttribute="height" constant="20" id="cOC-fb-5PX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STXihei" family="STXihei" pointSize="13"/>
+                        <color key="textColor" red="0.59988468885421753" green="0.59998828172683716" blue="0.59987103939056396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQS-An-W0h">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="VC1-Bq-pyq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="STXihei" family="STXihei" pointSize="15"/>
+                        <color key="textColor" red="0.59988468885421753" green="0.59998828172683716" blue="0.59987103939056396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="aQS-An-W0h" secondAttribute="trailing" id="2s7-g1-kLc"/>
+                    <constraint firstItem="aQS-An-W0h" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="1.4" id="4Ih-TT-8lH"/>
+                    <constraint firstItem="zLt-xl-JCy" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.64" id="cZS-dz-nLs"/>
+                    <constraint firstItem="zLt-xl-JCy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="f4S-KD-jLc"/>
+                    <constraint firstAttribute="trailing" secondItem="7aH-CX-znd" secondAttribute="trailing" constant="16" id="gKV-uc-SGG"/>
+                    <constraint firstItem="7aH-CX-znd" firstAttribute="centerY" secondItem="zLt-xl-JCy" secondAttribute="centerY" constant="-5" id="i27-cF-Mh0"/>
+                    <constraint firstItem="aQS-An-W0h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="oDr-0u-v6F"/>
+                    <constraint firstItem="7aH-CX-znd" firstAttribute="leading" secondItem="zLt-xl-JCy" secondAttribute="trailing" id="pem-xT-RIn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="locationDetailView" destination="aQS-An-W0h" id="DJ5-Hh-pdb"/>
+                <outlet property="locationDistantView" destination="7aH-CX-znd" id="TT4-qR-yZF"/>
+                <outlet property="locationNameView" destination="zLt-xl-JCy" id="ssl-WN-G5G"/>
+            </connections>
+            <point key="canvasLocation" x="29.5" y="59"/>
+        </tableViewCell>
+    </objects>
+</document>

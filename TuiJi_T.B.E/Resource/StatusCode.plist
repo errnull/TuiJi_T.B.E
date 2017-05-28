@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>200</key>
+	<string>操作成功</string>
+	<key>301</key>
+	<string>用户被禁用</string>
+	<key>302</key>
+	<string>用户名或密码错误</string>
+	<key>333</key>
+	<string>用户名已被注册</string>
+</dict>
+</plist>

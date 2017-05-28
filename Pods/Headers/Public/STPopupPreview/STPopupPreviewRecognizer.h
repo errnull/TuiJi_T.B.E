@@ -1,0 +1,1 @@
+../../../STPopupPreview/STPopupPreview/STPopupPreviewRecognizer.h
